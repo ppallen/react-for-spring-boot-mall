@@ -1,0 +1,66 @@
+/* 使登入容器填滿整個螢幕 */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 使容器填滿整個螢幕高度 */
+  background-color: rgba(0, 0, 0, 0.2); /* 半透明背景，模擬小視窗效果 */
+}
+
+/* 登入框的樣式 */
+.login-box {
+  width: 350px; /* 設定固定寬度的小視窗 */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 更明顯的陰影效果 */
+  background-color: #fff;
+  position: relative;
+}
+
+/* 標題樣式 */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 表單組樣式 */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* 標籤樣式 */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 輸入框樣式 */
+input {
+  width: 100%; /* 使輸入框填滿整個寬度 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* 確保邊框和填充不影響總寬度 */
+}
+
+/* 按鈕樣式 */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 錯誤信息樣式 */
+.error {
+  color: red;
+  text-align: center;
+}
