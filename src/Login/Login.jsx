@@ -23,6 +23,8 @@ const Login = () => {
       // 保存token到localStorage
       localStorage.setItem('token', token);
 
+      setEmail('');
+      setPassword('');
       setError('');
       //navigate('/shop'); // 登入成功後導向商店頁面
     } catch (error) {

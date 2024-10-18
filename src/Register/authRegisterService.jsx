@@ -1,15 +1,15 @@
 // authService.js
-const BASE_URL = 'https://your-api-url.com';
+const BASE_URL = 'http://localhost:8080/users';
 
-const AuthService = {
-  register: async (username, email, password) => {
+const registerService = {
+  register: async ( email, password) => {
     try {
       const response = await fetch(`${BASE_URL}/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username, email, password }),
+        body: JSON.stringify({ email, password }),
       });
       
       if (!response.ok) {
@@ -23,4 +23,4 @@ const AuthService = {
   }
 };
 
-export default AuthService;
+export default registerService;

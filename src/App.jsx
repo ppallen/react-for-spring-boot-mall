@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         {/* 設置登入頁為進入點 */}
-        <Route path="/" element={<Login/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/shop" element={<Shop/>} />
         <Route path="/cart" element={<Cart/>} /> 
